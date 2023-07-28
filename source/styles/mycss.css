@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat, serif;
+    background: linear-gradient(92deg, #D8D4D4 0%, rgba(240, 228, 43, 0.72) 100%);
+}
+
+p {
+    color: black;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.navbar-nav .nav-link.active {
+    color: aliceblue;
+}
+
+.navbar-brand img{
+    width: 40px;
+
+}
+
+.navbar-toggler {
+    background-color: rgb(244, 213, 8);
+}
+
+.sidebar {
+    color: black;
+    background: linear-gradient(272deg, #D8D4D4 0%, rgba(240, 228, 43, 0.72) 100%);
+}
+
+.card {
+    background: linear-gradient(272deg, #D8D4D4 0%, rgba(240, 228, 43, 0.72) 100%);
+
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.slide-text {
+    color: rgb(0, 0, 0);
+    margin: auto auto;
+}
+
+.footer-text {
+    color: rgb(255, 252, 252);
+    margin: auto auto;
+
+}
+
+footer,
+.btn-outline-warning {
+    background-color: rgb(28, 27, 27);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 1s ease 0s infinite normal forwards;
+    
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
